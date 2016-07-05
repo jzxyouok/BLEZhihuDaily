@@ -9,9 +9,8 @@
 #import "AppDelegate.h"
 
 #import "BZNetworkManager.h"
-
-#import "BZLaunchViewController.h"
 #import "BZNetworkLaunchModel.h"
+#import "BZLaunchViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,14 +19,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    BZLaunchViewController *launchViewController = [[BZLaunchViewController alloc]init];
-    [launchViewController showSelf];
     
     [[BZNetworkManager manager] getWithParameters:[[BZRequestLaunchModel alloc] init] success:^(id  _Nullable responseParameter) {
         BZReponseLaunchOuterModel *outerModel = [BZReponseLaunchOuterModel yy_modelWithJSON:responseParameter];
-        BZResponseLaunchModel *model = outerModel.creatives[0];
-        [[NSUserDefaults standardUserDefaults] setObject:model.text forKey:BZLaunchTextKey];
-        [[NSUserDefaults standardUserDefaults] setObject:[NSData dataWithContentsOfURL:[NSURL URLWithString:model.url]] forKey:BZLaunchImageKey];
+        if (outerModel.creatives && [outerModel.creatives count] > 0) {
+            BZResponseLaunchModel *model = outerModel.creatives[0];
+            
+            __block NSData *imageData = nil;
+            NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+            operationQueue.maxConcurrentOperationCount = 1;
+            NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+                imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:model.url]];
+            }] ;
+            [operation setCompletionBlock:^{
+                [[NSUserDefaults standardUserDefaults] setObject:model.text forKey:BZLaunchTextKey];
+                [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:BZLaunchImageKey];
+            }];
+            [operationQueue addOperation:operation];
+        }
+        
     } failure:^(NSError * _Nonnull error) {
         
     }];

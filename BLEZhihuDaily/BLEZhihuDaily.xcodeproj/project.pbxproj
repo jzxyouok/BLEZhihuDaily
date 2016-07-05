@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3213017DE233062E11076EF6 /* libPods-BLEZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D88097F97E499F9858E7F4B /* libPods-BLEZhihuDaily.a */; };
 		531AE6032FA1746300418474 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB61010B82BD9D392721F1B /* libPods.a */; };
+		642D6DE81D2BAB3300C176C6 /* BZNetworkStoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D6DE71D2BAB3300C176C6 /* BZNetworkStoryModel.m */; };
 		64371BE51D2127DA00C978B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64371BE41D2127DA00C978B4 /* main.m */; };
 		64371BE81D2127DA00C978B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64371BE71D2127DA00C978B4 /* AppDelegate.m */; };
 		64371BEE1D2127DA00C978B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64371BEC1D2127DA00C978B4 /* Main.storyboard */; };
@@ -53,6 +54,8 @@
 		6427A2DF1D242FCF003BBA06 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../../../Library/Developer/Xcode/DerivedData/BLEZhihuDaily-gcpoyqfoykkyjrabwtusyyelxuno/Build/Products/Debug-iphoneos/libMasonry.a"; sourceTree = "<group>"; };
 		6427A2E01D242FCF003BBA06 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../../Library/Developer/Xcode/DerivedData/BLEZhihuDaily-gcpoyqfoykkyjrabwtusyyelxuno/Build/Products/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		6427A2E41D242FD2003BBA06 /* libYYModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYYModel.a; path = "../../../../Library/Developer/Xcode/DerivedData/BLEZhihuDaily-gcpoyqfoykkyjrabwtusyyelxuno/Build/Products/Debug-iphoneos/libYYModel.a"; sourceTree = "<group>"; };
+		642D6DE61D2BAB3300C176C6 /* BZNetworkStoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZNetworkStoryModel.h; sourceTree = "<group>"; };
+		642D6DE71D2BAB3300C176C6 /* BZNetworkStoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkStoryModel.m; sourceTree = "<group>"; };
 		64371BE01D2127DA00C978B4 /* BLEZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64371BE41D2127DA00C978B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64371BE61D2127DA00C978B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 			children = (
 				64F42B2C1D24D03300369FE4 /* BZNetworkLaunchModel.h */,
 				64F42B2D1D24D03300369FE4 /* BZNetworkLaunchModel.m */,
+				642D6DE61D2BAB3300C176C6 /* BZNetworkStoryModel.h */,
+				642D6DE71D2BAB3300C176C6 /* BZNetworkStoryModel.m */,
 			);
 			path = NetworkModel;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				TargetAttributes = {
 					64371BDF1D2127DA00C978B4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 758YJ7F7QZ;
 					};
 					64371BF81D2127DA00C978B4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -483,6 +489,7 @@
 				64371C1E1D2128E500C978B4 /* BZLaunchViewController.m in Sources */,
 				64383C2D1D2516030065495B /* UIScreen+BLEZhihuDaily.m in Sources */,
 				644179671D24222600818483 /* BZNetworkManager.m in Sources */,
+				642D6DE81D2BAB3300C176C6 /* BZNetworkStoryModel.m in Sources */,
 				64371C211D21290500C978B4 /* BZMainViewController.m in Sources */,
 				64371BE81D2127DA00C978B4 /* AppDelegate.m in Sources */,
 				64383C3B1D2543810065495B /* BZBaseView.m in Sources */,

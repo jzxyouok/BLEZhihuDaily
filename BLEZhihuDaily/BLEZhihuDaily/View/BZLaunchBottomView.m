@@ -43,15 +43,19 @@ typedef void(^CompletionBlock)(void);
 }
 
 - (void)startLogoShowAnimationWithCompletion:(void(^)(void))completion{
+    [self startLogoShowAnimation];
+    self.completionBlock = completion;
+}
+
+- (void)startLogoShowAnimation {
     CABasicAnimation *animation =[CABasicAnimation animationWithKeyPath:@"strokeStart"];
     animation.fromValue = @0.19;
     animation.toValue = @1;
     animation.duration = kBZLaunchLogoShowAnimationDuration;
     animation.delegate = self;
     animation.removedOnCompletion = NO;
-    animation.fillMode=kCAFillModeForwards;
+    animation.fillMode = kCAFillModeForwards;
     [self.sharpLayer addAnimation:animation forKey:BZLaunchLogoShowAnimationkey];
-    self.completionBlock = completion;
 }
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{

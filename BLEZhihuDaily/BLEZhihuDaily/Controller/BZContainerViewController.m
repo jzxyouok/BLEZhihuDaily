@@ -13,17 +13,22 @@ static const NSTimeInterval kBZContainerFullSlideTime = 0.3;
 static const CGFloat kBZContainerCriticalVelocity = 400;
 static const CGFloat kBZContainerLorRHoldvalue = 30;
 
-@interface BZContainerViewController ()<UIGestureRecognizerDelegate>
+@interface BZContainerViewController ()<UIGestureRecognizerDelegate, BZLaunchViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *menuView;
 @property (weak, nonatomic) IBOutlet UIView *mainView;
-
-@property (nonatomic) CGFloat viewBeginX;
+@property (nonatomic) BOOL launchViewControllerIsDismiss;
 @end
 
 @implementation BZContainerViewController
 #pragma mark - LifeStyle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    BZLaunchViewController *launchViewController = [[BZLaunchViewController alloc]init];
+    launchViewController.delegate = self;
+    self.launchViewControllerIsDismiss = NO;
+    [launchViewController showSelf];
+    
     [self childViewsTransformMakeWithX:[UIScreen screenWidth] * -0.5];
 }
 
@@ -94,5 +99,19 @@ static const CGFloat kBZContainerLorRHoldvalue = 30;
     [UIView animateWithDuration:duration animations:^{
         [self childViewsTransformMakeWithX:X];
     }];
+}
+
+#pragma mark - UIViewController Delegate 
+-(BOOL)prefersStatusBarHidden {
+    if (!self.launchViewControllerIsDismiss) {
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark - BZLaunchViewControllerDelegate
+-(void)launchViewControllerDidDismiss {
+    self.launchViewControllerIsDismiss = YES;
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 @end

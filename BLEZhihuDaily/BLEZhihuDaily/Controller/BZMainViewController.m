@@ -8,6 +8,8 @@
 
 #import "BZMainViewController.h"
 
+#import "BZNetworkManager.h"
+#import "BZNetworkStoryModel.h"
 @interface BZMainViewController ()
 
 @end
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    BZRequestStoryModel *lastedModel = [[BZRequestStoryModel alloc]init];
+    [[BZNetworkManager manager] getWithParameters:lastedModel success:^(id  _Nullable responseParameter) {
+        
+    } failure:^(NSError * _Nonnull error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

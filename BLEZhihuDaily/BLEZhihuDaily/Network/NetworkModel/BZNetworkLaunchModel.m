@@ -11,7 +11,7 @@
 @implementation BZRequestLaunchModel
 
 -(NSString *)URL{
-    return @"http://news-at.zhihu.com/api/7/prefetch-launch-images/1242*1920";
+    return [NSString stringWithFormat:@"%@%@",kBZRequestRoot_API_7,@"prefetch-launch-images/1242*1920"];
 }
 @end
 

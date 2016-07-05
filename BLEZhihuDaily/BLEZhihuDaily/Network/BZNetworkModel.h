@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <YYModel.h>
+@interface BZNetworkModel : NSObject
 
-@interface BZRequestModel : NSObject
+@end
+
+@interface BZRequestModel : BZNetworkModel
 
 @property (nonnull, nonatomic, strong) NSString *URL;
 @end
 
-@interface BZResponseModel : NSObject
+@interface BZResponseModel : BZNetworkModel
 
 @end

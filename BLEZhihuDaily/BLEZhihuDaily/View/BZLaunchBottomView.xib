@@ -44,7 +44,7 @@
             <connections>
                 <outlet property="logoImageView" destination="2nL-nZ-Ks5" id="inU-41-Q1S"/>
             </connections>
-            <point key="canvasLocation" x="562" y="554"/>
+            <point key="canvasLocation" x="464" y="206"/>
         </view>
     </objects>
     <resources>

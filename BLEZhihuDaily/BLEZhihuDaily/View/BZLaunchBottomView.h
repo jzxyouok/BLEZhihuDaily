@@ -10,6 +10,7 @@
 
 @interface BZLaunchBottomView : BZBaseView
 
+- (void)startLogoShowAnimation;
 - (void)startLogoShowAnimationWithCompletion:(void(^)(void))completion;
 
 @end

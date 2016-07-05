@@ -7,7 +7,9 @@
 //
 
 #import "BZNetworkModel.h"
+@implementation BZNetworkModel
 
+@end
 
 @implementation BZRequestModel
 

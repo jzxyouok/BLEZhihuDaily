@@ -21,6 +21,7 @@
 - (nullable NSURLSessionDataTask*)getWithParameters:(BZRequestModel *)requestParameters success:(nullable void(^)(id _Nullable responseParameter))success failure:(nullable void(^)(NSError * _Nonnull error))failure{
     NSDictionary *const params = [requestParameters yy_modelToJSONObject];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript", @"text/plain", nil];
     manager.operationQueue.maxConcurrentOperationCount = 3;
     return [manager GET:requestParameters.URL parameters:params progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"network request \"%@\" success ^_^!!", requestParameters.URL);
@@ -36,6 +37,7 @@
 - (nullable NSURLSessionDataTask*)postWithParameters:(BZRequestModel *)requestParameters success:(nullable void(^)(id _Nullable responseParameter))success failure:(nullable void(^)(NSError * _Nonnull error))failure{
     NSDictionary *const params = [requestParameters yy_modelToJSONObject];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript", @"text/plain", nil];
     manager.operationQueue.maxConcurrentOperationCount = 3;
     return [manager POST:requestParameters.URL parameters:params progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"network request \"%@\" success ^_^!!", requestParameters.URL);

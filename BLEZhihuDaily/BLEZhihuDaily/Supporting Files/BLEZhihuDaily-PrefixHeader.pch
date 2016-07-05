@@ -9,7 +9,9 @@
 #ifndef BLEZhihuDaily_PrefixHeader_pch
 #define BLEZhihuDaily_PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#define kBZRequestRoot_API_4 @"http://news-at.zhihu.com/api/4/"
+#define kBZRequestRoot_API_7 @"http://news-at.zhihu.com/api/7/"
+#endif
 
 #endif /* BLEZhihuDaily_PrefixHeader_pch */
