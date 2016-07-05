@@ -60,7 +60,6 @@
 		64371BED1D2127DA00C978B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64371BEF1D2127DA00C978B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64371BF21D2127DA00C978B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		64371BF41D2127DA00C978B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64371BF91D2127DA00C978B4 /* BLEZhihuDailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEZhihuDailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64371BFD1D2127DA00C978B4 /* BLEZhihuDailyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEZhihuDailyTests.m; sourceTree = "<group>"; };
 		64371BFF1D2127DA00C978B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +87,8 @@
 		644179661D24222600818483 /* BZNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkManager.m; sourceTree = "<group>"; };
 		6441796B1D242C5700818483 /* BZNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZNetworkModel.h; sourceTree = "<group>"; };
 		6441796C1D242C5700818483 /* BZNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkModel.m; sourceTree = "<group>"; };
+		649E1CC31D2B5DBD0094CDD9 /* BLEZhihuDaily-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLEZhihuDaily-PrefixHeader.pch"; sourceTree = "<group>"; };
+		649E1CC61D2B5E370094CDD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64F42B2C1D24D03300369FE4 /* BZNetworkLaunchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZNetworkLaunchModel.h; sourceTree = "<group>"; };
 		64F42B2D1D24D03300369FE4 /* BZNetworkLaunchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkLaunchModel.m; sourceTree = "<group>"; };
 		6FB61010B82BD9D392721F1B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,19 +148,16 @@
 		64371BE21D2127DA00C978B4 /* BLEZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				64371BEC1D2127DA00C978B4 /* Main.storyboard */,
+				64371BF11D2127DA00C978B4 /* LaunchScreen.storyboard */,
 				64383C271D2515A20065495B /* Utils */,
 				644179641D2421D300818483 /* Network */,
 				644179601D24208A00818483 /* Controller */,
 				644179611D24208A00818483 /* Model */,
 				644179621D24208A00818483 /* Other */,
 				644179631D24208A00818483 /* View */,
-				64371BE61D2127DA00C978B4 /* AppDelegate.h */,
-				64371BE71D2127DA00C978B4 /* AppDelegate.m */,
-				64371BEC1D2127DA00C978B4 /* Main.storyboard */,
-				64371BEF1D2127DA00C978B4 /* Assets.xcassets */,
-				64371BF11D2127DA00C978B4 /* LaunchScreen.storyboard */,
-				64371BF41D2127DA00C978B4 /* Info.plist */,
 				64371BE31D2127DA00C978B4 /* Supporting Files */,
+				649E1CC21D2B563E0094CDD9 /* Resource */,
 			);
 			path = BLEZhihuDaily;
 			sourceTree = "<group>";
@@ -167,9 +165,13 @@
 		64371BE31D2127DA00C978B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				649E1CC61D2B5E370094CDD9 /* Info.plist */,
 				64371BE41D2127DA00C978B4 /* main.m */,
+				64371BE61D2127DA00C978B4 /* AppDelegate.h */,
+				64371BE71D2127DA00C978B4 /* AppDelegate.m */,
+				649E1CC31D2B5DBD0094CDD9 /* BLEZhihuDaily-PrefixHeader.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		64371BFC1D2127DA00C978B4 /* BLEZhihuDailyTests */ = {
@@ -252,6 +254,14 @@
 				64F42B2B1D24D02600369FE4 /* NetworkModel */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		649E1CC21D2B563E0094CDD9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				64371BEF1D2127DA00C978B4 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		64F42B2B1D24D02600369FE4 /* NetworkModel */ = {
@@ -355,7 +365,6 @@
 				TargetAttributes = {
 					64371BDF1D2127DA00C978B4 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 758YJ7F7QZ;
 					};
 					64371BF81D2127DA00C978B4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -627,7 +636,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = BLEZhihuDaily/Info.plist;
+				GCC_PREFIX_HEADER = "BLEZhihuDaily/Supporting Files/BLEZhihuDaily-PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/BLEZhihuDaily/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueeee.BLEZhihuDaily;
@@ -642,7 +652,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = BLEZhihuDaily/Info.plist;
+				GCC_PREFIX_HEADER = "BLEZhihuDaily/Supporting Files/BLEZhihuDaily-PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/BLEZhihuDaily/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueeee.BLEZhihuDaily;
