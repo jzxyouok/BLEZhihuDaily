@@ -9,9 +9,8 @@
 #import "BZNetworkModel.h"
 
 
-@interface BZRequestStoryModel : BZRequestModel
+@interface BZRequestLatestStoryModel : BZRequestModel
 
-@property (nonatomic, strong, nullable) NSString *beforeDate;
 
 @end
 

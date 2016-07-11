@@ -109,6 +109,11 @@ static const CGFloat kBZContainerLorRHoldvalue = 30;
     return NO;
 }
 
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - BZLaunchViewControllerDelegate
 -(void)launchViewControllerDidDismiss {
     self.launchViewControllerIsDismiss = YES;

@@ -60,6 +60,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jWk-jd-OVc">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JMc-ub-vJy"/>
                     </connections>
@@ -68,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="1010" y="875"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BZMenuViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BZMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -87,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1760" y="875"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="mfg-AD-ODo">
             <objects>
-                <viewController id="JRG-FU-KUQ" customClass="BZMainViewController" sceneMemberID="viewController">
+                <viewController id="JRG-FU-KUQ" customClass="BZMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rkZ-Lb-P7c"/>
                         <viewControllerLayoutGuide type="bottom" id="ZeV-nz-BIS"/>

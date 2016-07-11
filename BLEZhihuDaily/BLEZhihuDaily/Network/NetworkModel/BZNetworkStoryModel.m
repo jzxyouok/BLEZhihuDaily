@@ -8,19 +8,10 @@
 
 #import "BZNetworkStoryModel.h"
 
-@implementation BZRequestStoryModel
+@implementation BZRequestLatestStoryModel
 
 -(NSString *)URL{
-//    return [NSString stringWithFormat:@"%@%@",kBZRequestRoot_API_7,@"stories/latest"];
-    return @"http://daily.zhihu.com/";
-}
-
--(NSString *)beforeURL{
-    return [NSString stringWithFormat:@"%@%@%@",kBZRequestRoot_API_7,@"stories/before/",self.beforeDate];
-}
-
-+ (NSArray *)modelPropertyBlacklist {
-    return @[@"URL",@"beforeDate"];
+    return [NSString stringWithFormat:@"%@%@",kBZRequestRoot_API_4,@"news/latest"];
 }
 @end
 
