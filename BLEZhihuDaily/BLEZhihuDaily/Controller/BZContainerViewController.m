@@ -119,4 +119,13 @@ static const CGFloat kBZContainerLorRHoldvalue = 30;
     self.launchViewControllerIsDismiss = YES;
     [self setNeedsStatusBarAppearanceUpdate];
 }
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    //触摸时UINavigationBar事件不传递
+    if ([touch.view isKindOfClass:[UINavigationBar class]]) {
+        return NO;
+    }
+    return YES;
+}
 @end

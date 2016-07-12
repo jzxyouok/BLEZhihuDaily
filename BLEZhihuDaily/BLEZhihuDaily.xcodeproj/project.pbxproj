@@ -28,6 +28,8 @@
 		64383C3B1D2543810065495B /* BZBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64383C3A1D2543810065495B /* BZBaseView.m */; };
 		644179671D24222600818483 /* BZNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 644179661D24222600818483 /* BZNetworkManager.m */; };
 		6441796D1D242C5700818483 /* BZNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441796C1D242C5700818483 /* BZNetworkModel.m */; };
+		647A4F841D34D0910070A457 /* BZMainControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4F831D34D0910070A457 /* BZMainControllerCell.m */; };
+		647A4F871D34E0E10070A457 /* BZMainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4F861D34E0E10070A457 /* BZMainHeaderView.m */; };
 		64F42B2E1D24D03300369FE4 /* BZNetworkLaunchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F42B2D1D24D03300369FE4 /* BZNetworkLaunchModel.m */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,10 @@
 		644179661D24222600818483 /* BZNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkManager.m; sourceTree = "<group>"; };
 		6441796B1D242C5700818483 /* BZNetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZNetworkModel.h; sourceTree = "<group>"; };
 		6441796C1D242C5700818483 /* BZNetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkModel.m; sourceTree = "<group>"; };
+		647A4F821D34D0910070A457 /* BZMainControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZMainControllerCell.h; sourceTree = "<group>"; };
+		647A4F831D34D0910070A457 /* BZMainControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZMainControllerCell.m; sourceTree = "<group>"; };
+		647A4F851D34E0E10070A457 /* BZMainHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZMainHeaderView.h; sourceTree = "<group>"; };
+		647A4F861D34E0E10070A457 /* BZMainHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZMainHeaderView.m; sourceTree = "<group>"; };
 		649E1CC31D2B5DBD0094CDD9 /* BLEZhihuDaily-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLEZhihuDaily-PrefixHeader.pch"; sourceTree = "<group>"; };
 		649E1CC61D2B5E370094CDD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64F42B2C1D24D03300369FE4 /* BZNetworkLaunchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZNetworkLaunchModel.h; sourceTree = "<group>"; };
@@ -238,11 +244,14 @@
 		644179631D24208A00818483 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				647A4F811D34D0600070A457 /* Cell */,
 				64383C391D2543810065495B /* BZBaseView.h */,
 				64383C3A1D2543810065495B /* BZBaseView.m */,
 				64383C341D251DF60065495B /* BZLaunchBottomView.h */,
 				64383C351D251DF60065495B /* BZLaunchBottomView.m */,
 				64383C371D2521180065495B /* BZLaunchBottomView.xib */,
+				647A4F851D34E0E10070A457 /* BZMainHeaderView.h */,
+				647A4F861D34E0E10070A457 /* BZMainHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +266,15 @@
 				64F42B2B1D24D02600369FE4 /* NetworkModel */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		647A4F811D34D0600070A457 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				647A4F821D34D0910070A457 /* BZMainControllerCell.h */,
+				647A4F831D34D0910070A457 /* BZMainControllerCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		649E1CC21D2B563E0094CDD9 /* Resource */ = {
@@ -487,6 +505,7 @@
 			files = (
 				64371C241D2129A400C978B4 /* BZContainerViewController.m in Sources */,
 				64371C1E1D2128E500C978B4 /* BZLaunchViewController.m in Sources */,
+				647A4F871D34E0E10070A457 /* BZMainHeaderView.m in Sources */,
 				64383C2D1D2516030065495B /* UIScreen+BLEZhihuDaily.m in Sources */,
 				644179671D24222600818483 /* BZNetworkManager.m in Sources */,
 				642D6DE81D2BAB3300C176C6 /* BZNetworkStoryModel.m in Sources */,
@@ -498,6 +517,7 @@
 				6441796D1D242C5700818483 /* BZNetworkModel.m in Sources */,
 				64371BE51D2127DA00C978B4 /* main.m in Sources */,
 				64383C301D25166D0065495B /* UIColor+BLEZhihuDaily.m in Sources */,
+				647A4F841D34D0910070A457 /* BZMainControllerCell.m in Sources */,
 				64F42B2E1D24D03300369FE4 /* BZNetworkLaunchModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

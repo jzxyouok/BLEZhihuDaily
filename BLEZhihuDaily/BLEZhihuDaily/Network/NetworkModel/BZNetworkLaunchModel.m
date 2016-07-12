@@ -20,11 +20,12 @@
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"creatives" : [BZResponseLaunchModel class]};
 }
-
 @end
 
 @implementation BZResponseLaunchModel
+
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"impression_tracks" : [NSString class]};
-}@end
+}
+@end
 
