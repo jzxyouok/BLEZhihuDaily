@@ -18,11 +18,11 @@
 @implementation BZResponseLatestModel
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"stories" : [BZResponseLatestStoryModel class], @"top_stories" : [BZResponseTopStoryModel class]};
+    return @{@"stories" : [BZResponseStoryModel class], @"top_stories" : [BZResponseTopStoryModel class]};
 }
 @end
 
-@implementation BZResponseLatestStoryModel
+@implementation BZResponseStoryModel
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{@"images" : [NSString class]};

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BZMainControllerCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIView *label;
-@property (weak, nonatomic) IBOutlet UIView *image;
+@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

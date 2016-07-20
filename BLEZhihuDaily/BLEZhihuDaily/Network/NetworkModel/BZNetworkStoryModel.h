@@ -8,7 +8,7 @@
 
 #import "BZNetworkModel.h"
 
-@class BZResponseLatestStoryModel;
+@class BZResponseStoryModel;
 @class BZResponseTopStoryModel;
 
 @interface BZRequestLatestStoryModel : BZRequestModel
@@ -19,11 +19,11 @@
 @interface BZResponseLatestModel : BZResponseModel
 
 @property(nonatomic, strong) NSString *date;
-@property(nonatomic, strong) NSArray<BZResponseLatestStoryModel *> *stories;
+@property(nonatomic, strong) NSArray<BZResponseStoryModel *> *stories;
 @property(nonatomic, strong) NSArray<BZResponseTopStoryModel *> *top_stories;
 @end
 
-@interface BZResponseLatestStoryModel : BZResponseModel
+@interface BZResponseStoryModel : BZResponseModel
 
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSString *ga_prefix;

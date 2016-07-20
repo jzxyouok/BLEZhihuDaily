@@ -30,6 +30,7 @@
 		6441796D1D242C5700818483 /* BZNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441796C1D242C5700818483 /* BZNetworkModel.m */; };
 		647A4F841D34D0910070A457 /* BZMainControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4F831D34D0910070A457 /* BZMainControllerCell.m */; };
 		647A4F871D34E0E10070A457 /* BZMainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 647A4F861D34E0E10070A457 /* BZMainHeaderView.m */; };
+		64D1EEDC1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D1EEDB1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.m */; };
 		64F42B2E1D24D03300369FE4 /* BZNetworkLaunchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F42B2D1D24D03300369FE4 /* BZNetworkLaunchModel.m */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,8 @@
 		647A4F861D34E0E10070A457 /* BZMainHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZMainHeaderView.m; sourceTree = "<group>"; };
 		649E1CC31D2B5DBD0094CDD9 /* BLEZhihuDaily-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLEZhihuDaily-PrefixHeader.pch"; sourceTree = "<group>"; };
 		649E1CC61D2B5E370094CDD9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D1EEDA1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BLEZhihuDaily.h"; sourceTree = "<group>"; };
+		64D1EEDB1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BLEZhihuDaily.m"; sourceTree = "<group>"; };
 		64F42B2C1D24D03300369FE4 /* BZNetworkLaunchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZNetworkLaunchModel.h; sourceTree = "<group>"; };
 		64F42B2D1D24D03300369FE4 /* BZNetworkLaunchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZNetworkLaunchModel.m; sourceTree = "<group>"; };
 		6FB61010B82BD9D392721F1B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +211,8 @@
 				64383C2C1D2516030065495B /* UIScreen+BLEZhihuDaily.m */,
 				64383C2E1D25166D0065495B /* UIColor+BLEZhihuDaily.h */,
 				64383C2F1D25166D0065495B /* UIColor+BLEZhihuDaily.m */,
+				64D1EEDA1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.h */,
+				64D1EEDB1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -388,7 +393,6 @@
 				TargetAttributes = {
 					64371BDF1D2127DA00C978B4 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 758YJ7F7QZ;
 					};
 					64371BF81D2127DA00C978B4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -517,6 +521,7 @@
 				6441796D1D242C5700818483 /* BZNetworkModel.m in Sources */,
 				64371BE51D2127DA00C978B4 /* main.m in Sources */,
 				64383C301D25166D0065495B /* UIColor+BLEZhihuDaily.m in Sources */,
+				64D1EEDC1D35F87400F9E069 /* UIImageView+BLEZhihuDaily.m in Sources */,
 				647A4F841D34D0910070A457 /* BZMainControllerCell.m in Sources */,
 				64F42B2E1D24D03300369FE4 /* BZNetworkLaunchModel.m in Sources */,
 			);
